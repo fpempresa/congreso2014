@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="app" ng-strict-di>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="II Congreso Nacional de Formaci&oacute;n Profesional">
+        <meta name="author" content="fpempresa">
+        <link rel="shortcut icon" href="">
+
+        <title>I Congreso de Formaci&oacute;n Profesional</title>       
+
+        <link href="./lib/bootstrap/css/bootstrap.css"                 rel="stylesheet" type="text/css" />
+        <link href="./lib/fontawesome/css/font-awesome.css"            rel="stylesheet" type="text/css" />
+        <link href="./css/site/site.css"                               rel="stylesheet" type="text/css" />
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+        <script type="text/javascript">
+            window.cookieconsent_options = {
+                "message": "Este sitio web cookies propias y de terceros para ofrecer un mejor servicio.Si continua navegando asuminos que acepta su uso.  Mas informaci&oacute;n en",
+                "dismiss": "Aceptar",
+                "learnMore": "Politicas de Cookies", "link": "./cookies.html", "theme": "./lib/cookieconsent/cookieconsent.css"};
+        </script>
+
+        <script type="text/javascript" src="./lib/cookieconsent/cookieconsent.js"></script>
+        <!-- End Cookie Consent plugin -->
+        <script>
+/*          
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-68576909-2', 'auto');
+          ga('send', 'pageview');
+*/
+        </script>
+
+    </head>
+
+    <body id="top"  ng-controller="IndexController" style="background-color: #F6F8F7" >   
+
+        <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation"  >
+            <div class="container-fluid" >
+                <div class="navbar-header">
+                    <button id="buttonMenuHeader" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href ng-click="animateScroll.toElement('top')">
+                        <img src="./img/logo/logo.png"  alt="logo"  >&nbsp;
+                    </a>
+                </div>
+
+
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+
+                        <li class="hidden">
+                            <a href ng-click="animateScroll.toElement('top')" fpe-click-button-on-click="buttonMenuHeader"></a>
+                        </li>
+                        <li>
+                            <a  href ng-click="animateScroll.toElement('registro')" fpe-click-button-on-click="buttonMenuHeader">REGISTRO</a>
+                        </li>
+                        <li>
+                            <a  href ng-click="animateScroll.toElement('donde')" fpe-click-button-on-click="buttonMenuHeader">DONDE</a>
+                        </li>
+                        <li>
+                            <a  href ng-click="animateScroll.toElement('agenda')" fpe-click-button-on-click="buttonMenuHeader">AGENDA</a>
+                        </li>               
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="intro" >
+            <div class="intro-body">
+                <div class="containerrr">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-7" style="color:#6E8654">                           
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>                            
+                            <h3 style="font-size: 30px;text-transform: uppercase"><strong>Propuestas para el impulso</strong></h3>
+                            <br>
+                            <h1 style="font-size: 70px;"><strong>I CONGRESO NACIONAL</strong><br>DE FORMACIÓN<br>PROFESIONAL</h1>
+                            <br>
+                            <p class="intro-text" style="font-size: 30px;"><span style="color: #000000">Madrid 27 de Junio de 2014</span><br><span style="font-weight: bolder">Hotel Rafaelhoteles Atocha</span><br>Madrid</p>
+                            <br>
+                            <p><button class="btn btn-xl form__button form__button--primary" href=""  ng-click="animateScroll.toElement('registro')"  >REG&Iacute;STRO</button></p>
+                            <a href ng-click="animateScroll.toElement('registro')" style="color:#6E8654;border-color: #6E8654" class="btn button-circle">
+                                <i class="fa fa-angle-double-down animated"></i>
+                            </a>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="col-md-5 hidden-xs hidden-sm "  >
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>    
+                            <img src="img/site/trama.png" width="100%" height="100%" alt="" style="vertical-align: text-bottom"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <section id="registro" class="container section__container section--background-color-light section__container--padding">
+            <div class="row" >
+                <div class="col-xs-12">
+                    <br><br>
+                    <h3 class="section__main-title  section--color-dark-high">&nbsp;&nbsp;REGISTRO&nbsp;&nbsp;</h3>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>       
+            <div class="row" >       
+                <div class="col-xs-12">
+                    <a class="btn btn-xl form__button form__button--primary" href="https://docs.google.com/a/fpmislata.com/forms/d/18NdkTXWJ2qcwSZPYAuNfQhEbCQdDUykF4c4HQ4WK3K8/viewform"  >REG&Iacute;STRATE AQUI</a>
+                </div>        
+            </div>
+
+        </section>        
+
+        <section id="donde" class="container section__container section--background-color-light section__container--padding">
+            <div class="row" >
+                <div class="col-xs-12">
+                    <br><br>
+                    <h3 class="section__main-title  section--color-dark-high">&nbsp;&nbsp;DONDE&nbsp;&nbsp;</h3>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>     
+            <div class="row" >
+                <div class="col-xs-12">
+                    <p class="section__text  section--color-dark-high section__text--size-high"><strong>Hotel Rafaelhoteles Atocha</strong> en Mendez Alvaro, 30,28045 Madrid</p>
+                    <br>
+                </div>
+            </div>  
+            <div class="row" >
+                <div class="col-xs-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.33533572441!2d-3.689384384029659!3d40.40142147936683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42263c998628e5%3A0x76362b4a7b45447e!2sRafaelhoteles+Atocha!5e0!3m2!1ses!2ses!4v1447266873568" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>                    
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row" >      
+                <div class="col-xs-8 col-xs-offset-2">
+                    <p class="section__text  section--color-dark-high section__text--size-high"> &iquest;Vienes en tren al congreso? Tienes un 30% de descuento en todos los trenes usando el n&uacute;mero de autorizaci&oacute;n <strong>301512540</strong>. Mas informaci&oacute;n <a href="descuento_renfe.pdf" style="color:#005594" >aqui</a></p>
+                </div>
+            </div>
+            <div class="row" >       
+                <div class="col-xs-12">
+                    <a  href="http://www.renfe.com/"  ><img src="img/logo/logo_renfe.png" alt=""/></a>
+                </div>        
+            </div>            
+        </section>  
+
+
+        <section id="agenda" class="container section__container section--background-color-light section__container--padding">
+            <div class="row" >
+                <div class="col-xs-12">
+                    <br><br>
+                    <h3 class="section__main-title  section--color-dark-high">&nbsp;&nbsp;AGENDA&nbsp;&nbsp;</h3>
+                    <br>
+                </div>
+            </div>     
+            <div class="row" >      
+                <div class="col-xs-12">
+                    <h3><strong>Viernes 27 de Junio</strong></h3>
+
+                    <table class="table table-bordered table-striped">
+                        <tr class="active">
+                            <th style="width:  100px;text-align: center">Hora</th>
+                            <th style="text-align: center" colspan="2">Actividad</th>
+                        </tr>
+                        <tr>
+                            <td>09:00&nbsp;h.</td>
+                            <td colspan="2"><strong>Acreditaci&oacute;n y recogida de materiales.</strong></td>
+                        </tr>
+                        <tr>
+                            <td>16:30&nbsp;h.</td>
+                            <td colspan="2">
+                                <strong>Inaguraci&oacute;n <a href="https://www.youtube.com/watch?v=Rw1dN2NBW7I">(video)</a></strong>
+                                <div style="text-align: left">
+                                    D. Jos&eacute; Ignacio Wert – Ministro de Educaci&oacute;n<br>
+                                    D&ntilde;a. Amalia Blanco Lucas – Directora General de comunicaci&oacute;n y relaciones externas de Bankia<br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10:00&nbsp;h.</td>
+                            <td colspan="2">
+                                <strong>La v&iacute;a de la formaci&oacute;n profesional b&aacute;sica y dual <a href="#" target="_blank" >(slides)</a> y <a href="https://www.youtube.com/watch?v=WTEqWmrnRBg">(video)</a></strong>
+                                <div style="text-align: left">
+                                    D. Angel de Miguel Casas – Director General de Formaci&oacute;n Profesional del Ministerior de Educaci&oacute;n<br>
+                                </div>
+                            </td>
+                        </tr>   
+                        <tr>
+                            <td>10:45&nbsp;h.</td>
+                            <td colspan="2">
+                                <strong>Llaves para un futuro diferente <a href="#" target="_blank" >(slides)</a> y <a href="https://www.youtube.com/watch?v=zUjNawJ36y0">(video)</a></strong>
+                                <div style="text-align: left">
+                                    D. Guillermo Dorronsoro Artabe – Universidad de Deusto<br>
+                                </div>
+                            </td>
+                        </tr>   
+                        <tr>
+                            <td>11:30&nbsp;h.</td>
+                            <td colspan="2">
+                                <strong>Pausa caf&eacute;</strong>
+                            </td>
+                        </tr>   
+                        <tr>
+                            <td>12:00&nbsp;h.</td>
+                            <td colspan="2">
+                                <strong>Modelos de FP: Propuestas de futuro <a href="#" target="_blank" >(slides)</a> y <a href="https://www.youtube.com/watch?v=t6FicCiOudU">(video)</a></strong>
+                                <div style="text-align: left">
+                                    D. Jorge Ar&eacute;valo – Viceconsejero de FP del Gobierno Vasco<br>
+                                </div>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>12:45&nbsp;h.</td>
+                            <td colspan="2">
+                                <strong>Cambios en la formaci&oacute;n para ser competitivos <a href="#" target="_blank" >(slides)</a> y <a href="https://www.youtube.com/watch?v=hexCrxaACsY">(video)</a></strong>
+                                <div style="text-align: left">
+                                    Representante de la CEO<br>
+                                </div>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>11:30&nbsp;h.</td>
+                            <td colspan="2">
+                                <strong>Pausa comida</strong>
+                            </td>
+                        </tr>                         
+                        <tr>
+                            <td>15:00&nbsp;h.</td>
+                            <td colspan="2">
+                                <strong>Casos de &eacute;xito <a href="#" target="_blank" >(slides)</a> y <a href="https://www.youtube.com/watch?v=6uiSc_wfv7Q">(1&ordm; video)</a> <a href="https://www.youtube.com/watch?v=uelQiDSeZUE">(2&ordm; video)</a>  <a href="https://www.youtube.com/watch?v=jUYnR8EYsd0">(3&ordm; video)</a></strong>
+                                <div style="text-align: left">
+                                    D. Joxean Egaña Ajuria - Director Gerente del Instituto M&aacute;quina Herramienta. Elgoibar - Guip&uacute;zcoa (Pais Vasco)<br>
+                                    D. Pere Soriano - Director Pedag&oacute;gico de Florida Universitaria. Catarroja (Valencia)<br>
+                                    D. Miguel Ángel P&eacute;rez P&eacute;rez - Director del IES Hotel Escuela. Madrid<br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16:30&nbsp;h.</td>
+                            <td colspan="2">
+                                <strong>Conclusi&oacute;n y cierre <a href="#" target="_blank" >(slides)</a> y <a href="https://www.youtube.com/watch?v=yYoYFf0Fq6g">(video)</a></strong>
+                                <div style="text-align: left">
+                                    D. Joan Sarri&oacute;n – Presidente de la Asociaci&oacute;n FPempresa y Director del Centro Integrado P&uacute;blico FP de Mislata (Valencia)<br>
+                                </div>
+                            </td>
+                        </tr>                        
+                    </table>
+                </div>
+            </div>  
+
+        </section> 
+        <section id="patrocinadores" class="container section__container section--background-color-light section__container--padding">  
+            <div class="row" >
+                <div class="col-xs-12">
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>     
+
+            <div class="row"  >        
+
+                <div class="col-md-1 col-sm-6 col-xs-12" style="font-size: 18px;text-align: left">organiza</div>
+                <div class="col-md-3 col-sm-6 col-xs-12" style="font-size: 18px;text-align: left"><a href="http://www.fpempresa.net"><img src="./img/logo/logo_azul_medio.png" alt=""/></a></div>
+                <div class="col-md-1 col-sm-6 col-xs-12" style="font-size: 18px;text-align: left">patrocina</div>
+                <div class="col-md-2 col-sm-6 col-xs-12" style="font-size: 18px;text-align: left"><a href="http://www.bankia.es"><img src="./img/logo/bankia.gif" alt=""  /></a></div>
+            </div>
+            <br>
+            <div class="row"  >
+                <div class="col-md-1 col-sm-6 col-xs-12" style="font-size: 18px;text-align: left">colaboran</div>
+                <div class="col-md-3 col-sm-6 col-xs-12" style="font-size: 18px;text-align: left"><a href="http://www.mecd.gob.es/portada-mecd/"><img src="./img/logo/logo_ministerio_edu.png" alt=""/></a></div>
+                <div class="col-md-2 col-sm-6 col-xs-12" style="font-size: 18px;text-align: left"><a href="http://www.ceoe.es/"><img src="./img/logo/logo_ceoe.gif" alt=""/></a></div>
+            </div> 
+
+        </section>
+
+
+
+        <footer  class="container-fluid section__container  section--background-color-dark section--color-light-high">
+
+            <p class="section__text  section--color-light-high"  >
+                <a href="https://twitter.com/fp_empresa" target="_blank" class="social__icon"><i class="fa fa-twitter-square"></i></a>&nbsp;&nbsp;
+                <a href="https://www.facebook.com/asociacion.fpempresa" target="_blank" class="social__icon"><i class="fa fa-facebook-square"></i></a>&nbsp;&nbsp;
+                <a href="https://plus.google.com/+FPempresaNet/posts" target="_blank" class="social__icon"><i class="fa fa-google-plus-square"></i></a>
+                <br>
+                <br>
+                <a href="http://fpempresa.net"  class="section--color-light">&copy; 2014 Asociaci&oacute;n de centros de FP (AC-FP)</a>
+                <br>
+                <br>
+                Desarrollo por: <a href="https://github.com/fpempresa" class="section--color-light">Lorenzo Gonz&aacute;lez <i class="fa fa-github-alt" style=" vertical-align: middle;"></i></a>
+            </p> 
+        </footer>
+
+
+        <script type="text/javascript" src="./lib/jquery/js/jquery.js"></script>
+        <script type="text/javascript" src="./lib/bootstrap/js/bootstrap.js"></script>
+
+        <script type='text/javascript' src='./lib/angularjs/js/angular.js'></script>      
+        <script type="text/javascript" src="./lib/easing/js/jquery.easing.min.js"></script>
+
+        <script type="text/javascript" src="index.js"></script>  
+        <script type="text/javascript" src="./common/presentation/directive/clickbuttononclick.js"></script>
+        <script type="text/javascript" src="./common/presentation/service/animatescroll.js"></script>        
+    </body>
+</html>
